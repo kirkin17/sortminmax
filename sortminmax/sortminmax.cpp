@@ -9,12 +9,12 @@ void main()
 	
 
 	//random
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < n; i++)
 	{
 		a[i] = rand() % 20;
 	}
 	//output
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < n; i++)
 	{
 		cout << a[i] << "\t";
 	}
@@ -22,13 +22,16 @@ void main()
 
 
 	//algorithm downtoup
-	int min = a[0];
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < n; i++)
 	{
-		if (a[i] > min)
+		int min = a[0];
+		for (int j = 1; j < n; j++)
 		{
-
+			if (a[i] < min) min = a[i];
 		}
+
 	}
+
+
 
 }
