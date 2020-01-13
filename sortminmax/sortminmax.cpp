@@ -21,10 +21,14 @@ void main()
 	cout << endl;
 
 
-	//algorithm
+	//algorithm downtoup
+	int min = a[0];
 	for (int i = 0; i < 10; i++)
 	{
-		
+		if (a[i] > min)
+		{
+
+		}
 	}
 
 }
